@@ -20,6 +20,7 @@ class _HomeState extends State<Home> {
   List<dynamic> versions = [];
   int exVersion, exPrefVersion;
   var sharedPref = SharedPref();
+  int test;
 
   @override
   Widget build(BuildContext context) {
@@ -34,17 +35,20 @@ class _HomeState extends State<Home> {
                     .map((ver) => VersionModel.fromDocument(ver))
                     .toList();
                 return ListView.builder(
+                    physics: NeverScrollableScrollPhysics(),
                     shrinkWrap: true,
                     itemCount: versions.length,
                     itemBuilder: (BuildContext context, int index) {
                       exVersion = versions[index].exerciseVersion;
-                      sharedPref.writeShared(exVersion);
+                      sharedPref.writeSharedVersion(exVersion);
                       return Container(
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: <Widget>[
+
                             Container(
+                              margin: EdgeInsets.only(bottom: 50),
                               child: Text('Exercise Version : ' +
                                   versions[index].exerciseVersion.toString()),
                             ),

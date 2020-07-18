@@ -10,6 +10,7 @@ class ExerciseRepository {
   Future getExerciseCollection(int version) async {
     final prefs = await SharedPreferences.getInstance();
     versionFromShared = prefs.getInt('exerciseVersion') ?? 0;
+    print('VERSION FROM SHARED PREFS: $versionFromShared');
 
     QuerySnapshot qn = await firestore.collection('exercises').getDocuments(
         source: version != versionFromShared ? Source.server : Source.cache);

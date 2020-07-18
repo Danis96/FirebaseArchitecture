@@ -14,8 +14,7 @@ class ShowExercises extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
         child: FutureBuilder(
-            future: EViewModel()
-                .getAllExercises(exVersion),
+            future: EViewModel().getAllExercises(exVersion),
             builder: (BuildContext context, AsyncSnapshot snapshot) {
               if (snapshot.hasData) {
                 exercises = snapshot.data
@@ -29,8 +28,12 @@ class ShowExercises extends StatelessWidget {
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
                           Container(
-                            child: Text((index+1).toString() + '. '+
-                                exercises[index].name),
+                            child: Text((index + 1).toString() +
+                                '. ' +
+                                exercises[index].name +
+                                '  (' +
+                                exercises[index].bodyTag +
+                                ')'),
                           )
                         ],
                       );
