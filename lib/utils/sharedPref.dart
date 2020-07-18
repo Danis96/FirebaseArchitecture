@@ -15,9 +15,4 @@ class SharedPref {
     prefs.setInt('exerciseVersion', version);
   }
 
-
-
-
-
-
 }

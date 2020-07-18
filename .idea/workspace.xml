@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d586bd76-ba7c-4b11-9c7e-c36147c2cfe5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/exerciseRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/exerciseRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/versionRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/contentRepository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/globals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/globals.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/utils/sharedPref.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/sharedPref.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/home.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/home.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/view/showExercise.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view/showExercise.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view_model/ex-w-tp-v.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view_model/ex-w-tp-v.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,11 +77,23 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594970972011">
+    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595087943621">
       <screen x="-193" y="-1050" width="1680" height="1050" />
     </state>
-    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1594970972011" />
+    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1595087943621" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1594838063326">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
