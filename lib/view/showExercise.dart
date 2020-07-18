@@ -1,20 +1,31 @@
+import 'dart:async';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebasedrill/data/contentRepository.dart';
 import 'package:firebasedrill/model/exerciseModel.dart';
 import 'package:firebasedrill/view_model/ex-w-tp-v.dart';
 import 'package:flutter/material.dart';
 
-class ShowExercises extends StatelessWidget {
-  final int exVersion;
+class ShowExercises extends StatefulWidget {
+  @override
+  _ShowExercisesState createState() => _ShowExercisesState();
+}
 
-  ShowExercises({this.exVersion});
-
+class _ShowExercisesState extends State<ShowExercises> {
   List<dynamic> exercises = [];
+
+  @override
+  void initState() {
+    super.initState();
+    ContentRepository().checkVersion();
+  }
 
   @override
   Widget build(BuildContext context) {
     return Container(
         child: FutureBuilder(
-            future: EViewModel().getAllExercises(exVersion),
+            future: Future.delayed(Duration(seconds: 1)).then(
+                    (value) => EViewModel().getAllExercises()),
             builder: (BuildContext context, AsyncSnapshot snapshot) {
               if (snapshot.hasData) {
                 exercises = snapshot.data

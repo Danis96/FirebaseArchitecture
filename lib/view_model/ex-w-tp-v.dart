@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebasedrill/data/exerciseRepository.dart';
 import 'package:firebasedrill/data/trainingPlanRepository.dart';
-import 'package:firebasedrill/data/versionRepository.dart';
+import 'package:firebasedrill/data/contentRepository.dart';
 import 'package:firebasedrill/data/workoutRepository.dart';
 
 
@@ -9,8 +9,8 @@ import 'package:firebasedrill/data/workoutRepository.dart';
 class EViewModel {
   var exerciseRepository = ExerciseRepository();
 
-  Future getAllExercises(int version) {
-    return exerciseRepository.getExerciseCollection(version);
+  Future getAllExercises() {
+    return exerciseRepository.getExerciseCollection();
   }
 
   Future getSpecificExercise(String id, Source source) {
@@ -54,24 +54,6 @@ class TrainingPlanViewModel {
     Future createTrainingPlan(String time, name, workoutID) {
       return trainingPlanRepository.createTrainingPlan(time, name, workoutID);
     }
-}
-
-/// version view model
-class VersionViewModel {
-  var versionRepository = VersionRepository();
-
-  Future getAllVersions() {
-    return versionRepository.getVersionCollection();
-  }
-
-  Future getSpecificVersion(String id) {
-    return versionRepository.getVersionDocument(id);
-  }
-
-  Future updateVersion(
-      DocumentSnapshot doc, int exVersion, wVersion, tpVersion) {
-    return versionRepository.updateVersion(doc, exVersion, wVersion, tpVersion);
-  }
 }
 
 
