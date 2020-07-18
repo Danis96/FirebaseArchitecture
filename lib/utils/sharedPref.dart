@@ -4,13 +4,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 class SharedPref {
 
-  readShared(int versionForReading) async {
+  readSharedVersion(int versionForReading) async {
     final prefs = await SharedPreferences.getInstance();
     versionForReading = prefs.getInt('exerciseVersion') ?? 0;
     return versionForReading;
   }
 
-  writeShared(int version) async {
+  writeSharedVersion(int version) async {
     final prefs = await SharedPreferences.getInstance();
     prefs.setInt('exerciseVersion', version);
   }
