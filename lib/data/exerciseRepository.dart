@@ -11,13 +11,12 @@ class ExerciseRepository {
 
   Future getExerciseCollection() async {
     QuerySnapshot qn = await firestore.collection('exercises').getDocuments(
-        source: sourceForContent);
-    print('get exercise from $sourceForContent');
+        source: Source.cache);
     return qn.documents;
   }
 
   Future getExerciseDocument(String id, Source source) async {
-    DocumentSnapshot doc = await firestore.document(id).get(source: sourceForContent);
+    DocumentSnapshot doc = await firestore.document(id).get(source: Source.cache);
     return doc.data;
   }
 

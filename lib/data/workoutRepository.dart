@@ -4,15 +4,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 class WorkoutRepository {
   var firestore = Firestore.instance;
 
-  Future getWorkoutCollection(int version) async {
+  Future getWorkoutCollection() async {
     QuerySnapshot qn = await firestore
         .collection('workouts')
-        .getDocuments(source: version > 1 ? Source.server : Source.cache);
+        .getDocuments(source: Source.cache);
     return qn.documents;
   }
 
-  Future getWorkoutDocument(String id, int version) async {
-    DocumentSnapshot doc = await firestore.document(id).get(source: version > 1 ? Source.server : Source.cache);
+  Future getWorkoutDocument(String id) async {
+    DocumentSnapshot doc = await firestore.document(id).get(source: Source.cache);
     return doc.data;
   }
 
