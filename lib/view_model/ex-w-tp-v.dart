@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebasedrill/data/exerciseRepository.dart';
 import 'package:firebasedrill/data/trainingPlanRepository.dart';
-import 'package:firebasedrill/data/contentRepository.dart';
 import 'package:firebasedrill/data/workoutRepository.dart';
 
 
@@ -26,12 +25,12 @@ class EViewModel {
 class WorkoutViewModel {
     var workoutRepository = WorkoutRepository();
 
-    Future getAllWorkouts(int version) {
-       return workoutRepository.getWorkoutCollection(version);
+    Future getAllWorkouts() {
+       return workoutRepository.getWorkoutCollection();
     }
 
     Future getSpecificWorkout(String id, int version) {
-       return workoutRepository.getWorkoutDocument(id, version);
+       return workoutRepository.getWorkoutDocument(id);
     }
 
     Future createWorkout(String day, name, exerciseID, time, int reps) {
@@ -43,12 +42,12 @@ class WorkoutViewModel {
 class TrainingPlanViewModel {
     var trainingPlanRepository = TrainingPlanRepository();
 
-    Future getAllTrainingPlans(int version) {
-       return trainingPlanRepository.getTrainingPlanCollection(version);
+    Future getAllTrainingPlans() {
+       return trainingPlanRepository.getTrainingPlanCollection();
     }
 
-    Future getSpecificTrainingPlan(String id, int version) {
-       return trainingPlanRepository.getTrainingPlanDocument(id, version);
+    Future getSpecificTrainingPlan(String id) {
+       return trainingPlanRepository.getTrainingPlanDocument(id);
     }
 
     Future createTrainingPlan(String time, name, workoutID) {
