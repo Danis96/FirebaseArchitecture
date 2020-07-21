@@ -20,16 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d586bd76-ba7c-4b11-9c7e-c36147c2cfe5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/lib/data/source/exerciseRepository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/contentRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/contentRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/exerciseRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/exerciseRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/trainingPlanRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/trainingPlanRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/workoutRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/workoutRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/checkConnection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/checkConnection.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/globals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/globals.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/sharedPref.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/sharedPref.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view_model/ex-w-tp-v.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/view_model/ex-w-tp-v.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/contentRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/contentRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/exerciseRepository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/trainingPlanRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/workoutRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/exerciseModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/exerciseModel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/trainingPlanModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/trainingPlanModel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/versionModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/versionModel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/model/workoutModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/workoutModel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/home.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view/showExercise.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/view_model/ex-w-tp-v.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +66,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/lib/showExerciseWidget" />
+      <recent name="$PROJECT_DIR$/lib/data" />
+      <recent name="$PROJECT_DIR$/lib/data/source" />
       <recent name="$PROJECT_DIR$/android/app" />
     </key>
   </component>
@@ -90,10 +98,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595087943621">
+    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595277858302">
       <screen x="-193" y="-1050" width="1680" height="1050" />
     </state>
-    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1595087943621" />
+    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1595277858302" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1594838063326">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
