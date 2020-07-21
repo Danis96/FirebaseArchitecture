@@ -1,7 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class TrainingPlanModel {
-   final String name,time;
+   final String name;
+   final int time;
    final List<dynamic> workouts;
 
    TrainingPlanModel({this.name, this.time, this.workouts});

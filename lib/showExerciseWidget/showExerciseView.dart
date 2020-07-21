@@ -1,10 +1,10 @@
 import 'dart:async';
-
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebasedrill/data/contentRepository.dart';
-import 'package:firebasedrill/model/exerciseModel.dart';
-import 'package:firebasedrill/view_model/ex-w-tp-v.dart';
+import 'package:firebasedrill/data/exerciseModel.dart';
+import 'package:firebasedrill/exercise/exerciseViewModel.dart';
+import 'package:firebasedrill/showExerciseWidget/showExerciseViewModel.dart';
 import 'package:flutter/material.dart';
+
+var showExerciseViewModel = ShowExerciseViewModel();
 
 class ShowExercises extends StatefulWidget {
   @override
@@ -17,7 +17,7 @@ class _ShowExercisesState extends State<ShowExercises> {
   @override
   void initState() {
     super.initState();
-    ContentRepository().checkVersion();
+    showExerciseViewModel.checkContentVersion();
   }
 
   @override

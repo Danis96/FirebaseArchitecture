@@ -15,20 +15,4 @@ class TrainingPlanRepository {
         await firestore.document(id).get(source: Source.cache);
     return doc.data;
   }
-
-  createTrainingPlan(
-    String time,
-    name,
-    workoutID,
-  ) async {
-    await firestore.collection('trainingPlan').add({
-      'time': time,
-      'name': name,
-      'exercises': [
-        {
-          'workoutID': workoutID,
-        }
-      ]
-    });
-  }
 }

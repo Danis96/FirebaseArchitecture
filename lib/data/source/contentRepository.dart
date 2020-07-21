@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebasedrill/data/versionModel.dart';
 import 'package:firebasedrill/utils/sharedPref.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -23,12 +24,10 @@ class ContentRepository {
   checkVersion() async {
     Firestore db = await this.db;
     var sharedPref = SharedPref();
+    List<dynamic> versions = [];
     int versionFromSharedExercise,
         versionFromSharedWorkout,
-        versionFromSharedTrainingPlan,
-        versionFromServerExercise,
-        versionFromServerWorkout,
-        versionFromServerTrainingPlan;
+        versionFromSharedTrainingPlan;
 
     final prefs = await SharedPreferences.getInstance();
 
@@ -42,46 +41,42 @@ class ContentRepository {
     versionFromSharedTrainingPlan = prefs.getInt('trainingPlanVersion') ?? 0;
 
     /// server verzija
-    DocumentSnapshot qn = await db
+    await db
         .collection('versions')
-        .document('bsjRzcG4O8PEi3Dq0BbB')
-        .get(source: Source.serverAndCache)
-        .then((value) {
-      value.data.forEach((key, value) {
-        versionFromServerExercise = value[0]['version'];
-        versionFromServerWorkout = value[1]['version'];
-        versionFromServerTrainingPlan = value[2]['version'];
-      });
+        .getDocuments(source: Source.server)
+        .then((QuerySnapshot snapshot) {
+      versions =
+          snapshot.documents.map((e) => VersionModel.fromDocument(e)).toList();
       return;
     });
     print('VERSION FROM SHARED PREFS ex: $versionFromSharedExercise');
-    print('VERSION FROM server ex : $versionFromServerExercise');
+    print('VERSION FROM server ex : ' + versions[0].exerciseVersion.toString());
     print('VERSION FROM SHARED PREFS w: $versionFromSharedWorkout');
-    print('VERSION FROM server w : $versionFromServerWorkout');
+    print('VERSION FROM server w : ' + versions[0].workoutVersion.toString());
     print('VERSION FROM SHARED PREFS tp: $versionFromSharedTrainingPlan');
-    print('VERSION FROM server tp : $versionFromServerTrainingPlan');
+    print('VERSION FROM server tp : ' + versions[0].trainingPlanVersion.toString());
 
     /// check for version exercise
-    if (versionFromServerExercise != versionFromSharedExercise) {
+    if (versions[0].exerciseVersion != versionFromSharedExercise) {
       await db.collection('exercises').getDocuments(source: Source.server);
-      sharedPref.writeSharedVersion(versionFromServerExercise,
-          versionFromServerWorkout, versionFromServerTrainingPlan);
+      sharedPref.writeSharedVersion(versions[0].exerciseVersion,
+          versions[0].workoutVersion, versions[0].trainingPlanVersion);
       print('Razlicite su verzije i skidam novi kontent Exercise');
     }
 
     /// check for version workout
-    if (versionFromServerWorkout != versionFromSharedWorkout) {
+    if (versions[0].workoutVersion != versionFromSharedWorkout) {
       await db.collection('workouts').getDocuments(source: Source.server);
-      sharedPref.writeSharedVersion(versionFromServerExercise,
-          versionFromServerWorkout, versionFromServerTrainingPlan);
+      sharedPref.writeSharedVersion(versions[0].exerciseVersion,
+          versions[0].workoutVersion, versions[0].trainingPlanVersion);
       print('Razlicite su verzije i skidam novi kontent Workout');
     }
 
     /// check for version trainingPlan
-    if (versionFromServerTrainingPlan != versionFromSharedTrainingPlan) {
+    if (versions[0].trainingPlanVersion != versionFromSharedTrainingPlan) {
       await db.collection('trainingPlan').getDocuments(source: Source.server);
-      sharedPref.writeSharedVersion(versionFromServerExercise,
-          versionFromServerWorkout, versionFromServerTrainingPlan);
+      sharedPref.writeSharedVersion(versions[0].exerciseVersion,
+          versions[0].workoutVersion, versions[0].trainingPlanVersion);
       print('Razlicite su verzije i skidam novi kontent TrainingPlan');
     }
   }

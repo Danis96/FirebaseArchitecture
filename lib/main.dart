@@ -1,5 +1,4 @@
-import 'package:firebasedrill/data/contentRepository.dart';
-import 'package:firebasedrill/view/home.dart';
+import 'package:firebasedrill/showExerciseWidget/showExerciseView.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -19,7 +18,7 @@ class MyApp extends StatelessWidget {
           title: Text('Firebase Drill'),
           centerTitle: true,
         ),
-        body: Home()
+        body: Center(child: ShowExercises())
       ),
     );
   }

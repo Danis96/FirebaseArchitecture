@@ -15,18 +15,4 @@ class WorkoutRepository {
     DocumentSnapshot doc = await firestore.document(id).get(source: Source.cache);
     return doc.data;
   }
-
-  createWorkout(String day, name, exerciseID, time, int reps) async {
-    await firestore.collection('workouts').add({
-      'day': day,
-      'name': name,
-      'exercises': [
-        {
-          'exerciseID': exerciseID,
-          'reps': reps,
-          'time': time
-        }
-      ]
-    });
-  }
 }
