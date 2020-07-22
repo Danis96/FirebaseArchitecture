@@ -1,5 +1,7 @@
 
 
+import 'dart:async';
+
 import 'package:firebasedrill/data/source/contentRepository.dart';
 
 class ShowExerciseViewModel {
@@ -9,6 +11,5 @@ class ShowExerciseViewModel {
   checkContentVersion() {
     contentRepository.checkVersion();
   }
-
 
 }
