@@ -1,4 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebasedrill/data/exerciseModel.dart';
+import 'package:firebasedrill/data/source/exerciseRepository.dart';
 import 'package:firebasedrill/data/versionModel.dart';
 import 'package:firebasedrill/utils/sharedPref.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -24,6 +26,7 @@ class ContentRepository {
   checkVersion() async {
     Firestore db = await this.db;
     var sharedPref = SharedPref();
+    var exerciseRepo = ExerciseRepository();
     List<dynamic> versions = [];
     int versionFromSharedExercise,
         versionFromSharedWorkout,
@@ -54,7 +57,8 @@ class ContentRepository {
     print('VERSION FROM SHARED PREFS w: $versionFromSharedWorkout');
     print('VERSION FROM server w : ' + versions[0].workoutVersion.toString());
     print('VERSION FROM SHARED PREFS tp: $versionFromSharedTrainingPlan');
-    print('VERSION FROM server tp : ' + versions[0].trainingPlanVersion.toString());
+    print('VERSION FROM server tp : ' +
+        versions[0].trainingPlanVersion.toString());
 
     /// check for version exercise
     if (versions[0].exerciseVersion != versionFromSharedExercise) {
@@ -62,6 +66,8 @@ class ContentRepository {
       sharedPref.writeSharedVersion(versions[0].exerciseVersion,
           versions[0].workoutVersion, versions[0].trainingPlanVersion);
       print('Razlicite su verzije i skidam novi kontent Exercise');
+    } else {
+       exerciseRepo.getExerciseCollection();
     }
 
     /// check for version workout

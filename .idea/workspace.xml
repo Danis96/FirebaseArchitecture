@@ -20,21 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d586bd76-ba7c-4b11-9c7e-c36147c2cfe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/data/source/exerciseRepository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/contentRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/contentRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/exerciseRepository.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/trainingPlanRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/workoutRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/exerciseModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/exerciseModel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/trainingPlanModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/trainingPlanModel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/versionModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/versionModel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/model/workoutModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/workoutModel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/home.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view/showExercise.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/view_model/ex-w-tp-v.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/source/contentRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/contentRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/source/exerciseRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/exerciseRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseViewModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseViewModel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/globals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/globals.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
