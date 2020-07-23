@@ -66,9 +66,8 @@ class ContentRepository {
       sharedPref.writeSharedVersion(versions[0].exerciseVersion,
           versions[0].workoutVersion, versions[0].trainingPlanVersion);
       print('Razlicite su verzije i skidam novi kontent Exercise');
-    } else {
-       exerciseRepo.getExerciseCollection();
     }
+
 
     /// check for version workout
     if (versions[0].workoutVersion != versionFromSharedWorkout) {

@@ -2,10 +2,6 @@
 
 import 'dart:io';
 
-import 'package:cloud_firestore/cloud_firestore.dart';
-
-import 'globals.dart';
-
 class InternetConnectivity {
   checkForConnectivity() async {
     try {
@@ -17,5 +13,6 @@ class InternetConnectivity {
       print('not connected');
     }
   }
-
 }
+
+
