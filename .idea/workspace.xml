@@ -24,11 +24,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/source/contentRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/contentRepository.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/data/source/exerciseRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/exerciseRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseViewModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseViewModel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/utils/globals.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/globals.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/source/trainingPlanRepository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/source/workoutRepository.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/trainingPlanModel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/data/workoutModel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/exercise/exerciseViewModel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseView.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExercise/showExerciseView.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/showExerciseWidget/showExerciseViewModel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/showExercise/showExerciseViewModel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/trainingPlan/trainingPlanViewModel.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/checkConnection.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/utils/checkConnection.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/utils/globals.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/workout/workoutViewModel.dart" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,13 +99,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595277858302">
+    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595417485167">
       <screen x="-193" y="-1050" width="1680" height="1050" />
     </state>
-    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1595277858302" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1594838063326">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="385" y="-771" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1595417485167" />
+    <state x="207" y="-887" width="880" height="888" key="search.everywhere.popup" timestamp="1595412702011">
+      <screen x="-193" y="-1050" width="1680" height="1050" />
     </state>
+    <state x="207" y="-887" width="880" height="888" key="search.everywhere.popup/0.0.1280.800/-193.-1050.1680.1050@-193.-1050.1680.1050" timestamp="1595412702011" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1594838063326" />
   </component>
 </project>

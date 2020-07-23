@@ -1,4 +1,4 @@
-import 'package:firebasedrill/showExerciseWidget/showExerciseView.dart';
+import 'package:firebasedrill/showExercise/showExerciseView.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
